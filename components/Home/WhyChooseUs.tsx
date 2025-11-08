@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
             {features.map((feature, idx) => (
             <motion.div 
                 key={idx} 
-                className="flex flex-col items-center gap-5 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-500"
+                className="flex flex-col items-center gap-5 p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform duration-300 ease-in hover:scale-105"
                 variants={itemVariants}
             >
                 <Image src="/logo.jpg" alt="" width={80} height={80}/>
