@@ -13,7 +13,7 @@ export default function Navbar() {
             <div className="flex gap-2 items-center">
                 <RedLink path="/">Home</RedLink>
                 <RedLink path="/academics">Academics</RedLink>
-                <RedLink path="/student-life">Home</RedLink>
+                <RedLink path="/student-life">Student Life</RedLink>
                 <RedLink path="/news-and-events">News and Events</RedLink>
                 <RedLink path="/about">About us</RedLink>
             </div>

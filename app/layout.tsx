@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import { Metadata } from "next";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Palar Integrated School",
@@ -14,6 +15,7 @@ export default function RootLayout({ children,}: Readonly<{ children: React.Reac
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
