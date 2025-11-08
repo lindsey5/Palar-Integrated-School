@@ -11,15 +11,15 @@ export default function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="bg-white shadow-md px-5 py-3 md:px-10">
+        <nav className="fixed inset-x-0 top-0 z-10 bg-white shadow-md px-5 py-3 md:px-10">
         <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="flex gap-3 items-center">
+            <Link href="/" className="flex gap-3 items-center">
             <Image width={50} height={50} src="/logo.jpg" alt="Logo" />
             <h1 className="text-red-800 text-xl md:text-2xl font-bold">
                 Palar Integrated School
             </h1>
-            </div>
+            </Link>
 
             {/* Desktop Links */}
             <div className="hidden md:flex gap-4 items-center">
