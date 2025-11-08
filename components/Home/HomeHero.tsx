@@ -10,7 +10,7 @@ export default function HomeHeroSection(){
             <motion.div 
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+                transition={{ duration: 1, ease: "easeInOut"}}
                 className="w-full space-y-8 text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"
             >
                 <h1 className="text-4xl md:text-6xl font-bold">PALAR INTEGRATED SCHOOL</h1>

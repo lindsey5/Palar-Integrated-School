@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 
 const itemVariants = {
@@ -6,22 +6,22 @@ const itemVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            duration: 0.8,
-            y: { stiffness: 1000, velocity: -50 },
+            duration: 1,
+            y: { stiffness: 800, velocity: -20 },
         },
     },
     hidden: {
         y: 20,
         opacity: 0,
         transition: {
-            y: { stiffness: 1000 },
+            y: { stiffness: 800 },
         },
     },
 }
 
 const containerVariants = {
     visible: {
-        transition: { staggerChildren: 0.2, delayChildren: 0.1 },
+        transition: { staggerChildren: 0.3, delayChildren: 0.2 },
     },
     hidden: {
         transition: { staggerChildren: 0.5, staggerDirection: -1 },
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
             initial="hidden"
             whileInView="visible"
             variants={containerVariants}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid md:grid-cols-2 gap-8"
         >
             {features.map((feature, idx) => (
             <motion.div 
